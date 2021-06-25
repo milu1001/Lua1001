@@ -30,7 +30,6 @@ public class dialogueTriggerwoText : MonoBehaviour
         {
             if (!DialogueBox.activeInHierarchy)
             {
-                Debug.Log("key");
                 DialogueBox.SetActive(true);
                 ListenBox.SetActive(false);
                 cc.enabled = false;
@@ -38,9 +37,9 @@ public class dialogueTriggerwoText : MonoBehaviour
             }
             else if (DialogueBox.activeInHierarchy)
             {
-                Destroy(ListenBox); ListenBox = null; 
-                Destroy(DialogueBox); DialogueBox = null; 
                 cc.enabled = true;
+                DialogueBox.SetActive(false);
+                GetComponent<Collider2D>().enabled = false;
             }
         }
         
