@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ActivateFindKey : MonoBehaviour
 {
     public GameObject ListenBox;
+    public GameObject TriggerForUpstairs;
     public bool PlayerInRange;
 
 // Start is called before the first frame update
@@ -25,6 +26,7 @@ public void Update()
         if (!ListenBox.activeInHierarchy)
             {
                 ListenBox.SetActive(true);
+                TriggerForUpstairs.SetActive(true);
             }
     }
 
