@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ActivateFindKey : MonoBehaviour
 {
     public GameObject ListenBox;
+    public GameObject Kommode;
     public GameObject TriggerForUpstairs;
     public bool PlayerInRange;
 
@@ -26,6 +27,7 @@ public void Update()
         if (!ListenBox.activeInHierarchy)
             {
                 ListenBox.SetActive(true);
+                Kommode.SetActive(true);
                 TriggerForUpstairs.SetActive(true);
             }
     }

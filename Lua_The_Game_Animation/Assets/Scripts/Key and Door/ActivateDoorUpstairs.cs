@@ -25,6 +25,8 @@ public class ActivateDoorUpstairs : MonoBehaviour
                 Door.SetActive(true);
                 HootConvo1.SetActive(false);
                 HootConvo2.SetActive(true);
+
+
             }
             else if (Door.activeInHierarchy)
             {

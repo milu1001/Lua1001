@@ -2,18 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrowLightUI : MonoBehaviour
+public class EnableChangeConvo : MonoBehaviour
+    
 {
+    public GameObject ChangeConvo;
     public bool PlayerInRange;
-    public GameObject CrowConvo1;
-    public GameObject CrowConvo2;
-
-
-
     // Start is called before the first frame update
-
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C) && PlayerInRange)
+        {
+            ChangeConvo.SetActive(true);
+        }
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -27,15 +35,6 @@ public class CrowLightUI : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = false;
-        }
-    }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X) && PlayerInRange)
-        {
-            GetComponent<Collider2D>().enabled = false;
-            CrowConvo1.SetActive(false);
-            CrowConvo2.SetActive(true);
         }
     }
 }
