@@ -8,6 +8,8 @@ public class TurnLight : MonoBehaviour
     private bool on = false;
     public bool PlayerInRange;
     public GameObject ListenBox;
+    public Animator FadeLight;
+    public Animator FadeUI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +17,7 @@ public class TurnLight : MonoBehaviour
         {
             PlayerInRange = true;
             ListenBox.SetActive(true);
+            FadeUI.SetBool("inRange", true);
         }
     }
 
@@ -24,6 +27,7 @@ public class TurnLight : MonoBehaviour
         {
             PlayerInRange = false;
             ListenBox.SetActive(false);
+            FadeUI.SetBool("inRange", false);
         }
     }
     void Update()
