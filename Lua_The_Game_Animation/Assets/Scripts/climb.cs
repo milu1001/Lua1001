@@ -58,36 +58,37 @@ public class climb : MonoBehaviour
         }
         if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
         {
-            luaanimator.SetBool("ishanging", true);
-            //luaanimator.SetBool("isrunning", false);
+           // luaanimator.SetBool("isrunning", false);
+            
         }
 
         if (isClimbing && climbCheck.collider != null && Input.GetKey(KeyCode.UpArrow))
             {
                  luaanimator.SetBool("isclimbing", true);
-            }
+            luaanimator.speed = 1;
+        }
         else if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.UpArrow))
-            {
-                 //luaanimator.SetBool("isclimbing", false);
-                 luaanimator.SetBool("ishanging", true);
-            }
+        {
+             luaanimator.SetBool("isclimbing", false);
+            luaanimator.speed = 0;
+        }
 
         if (isClimbing && climbCheck.collider != null && Input.GetKey(KeyCode.DownArrow))
             {
                  luaanimator.SetBool("isclimbingreverse", true);
-            }
+            luaanimator.speed = 1;
+        }
         else if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.DownArrow))
             {
-                 //luaanimator.SetBool("isclimbingreverse", false);
-                 luaanimator.SetBool("ishanging", true);
-            }
+                 luaanimator.SetBool("isclimbingreverse", false);
+           // luaanimator.speed = 0;
+        }
         
             if (isClimbing && climbCheck.collider != null)
         {
             inputVertical = Input.GetAxisRaw("Vertical");
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(0, inputVertical * climbingSpeed);
-           // luaanimator.SetBool("isclimbing", true);
 
         }
         else
@@ -95,7 +96,7 @@ public class climb : MonoBehaviour
             rb.gravityScale = 1f;
             luaanimator.SetBool("isclimbing", false);
             luaanimator.SetBool("isclimbingreverse", false);
-
+            luaanimator.speed = 1;
         }
         
     }

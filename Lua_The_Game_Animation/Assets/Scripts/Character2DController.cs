@@ -53,25 +53,40 @@ public class Character2DController : MonoBehaviour
         }
         groundCheckRay = Physics2D.Raycast(transform.position, Vector2.down, rayDistance, whatIsGround);
 
-        if (groundCheckRay.collider != null)
-        {
-            isGrounded = true;
-            if (!safetyOn)
-            {
-                jumpTime = Time.time + jumpBuffer;
-            }
-        }
-
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isJumping = true;
             luaanimator.SetTrigger("isjumping");
             luaanimator.SetBool("isrunning", false);
         }
+        if (groundCheckRay.collider != null)
+        {
+            isGrounded = true;
+            if (!safetyOn)
+            {
+                jumpTime = Time.time + jumpBuffer;
+                luaanimator.SetBool("isfalling", false);
+            }
+            
+        }
+        else
+        {
+            if (luaanimator.GetBool("isclimbing") == (true) || luaanimator.GetBool("isclimbingreverse") == (true))
+            // (luaanimator.GetComponent().GetBool("isclimbing") == (true) )
+            {
+                luaanimator.SetBool("isfalling", false);
+            }
+            else
+            {
+                luaanimator.SetBool("isfalling", true);
+            }
+            luaanimator.SetBool("isrunning", false);
+        }
+
 
         //Debug.DrawRay(transform.position, new Vector2(0, -rayDistance), Color.blue);
 
-        lanternJoint.connectedAnchor = new Vector2(_rigidbody.transform.position.x - Bone.transform.position.x, _rigidbody.transform.position.y - Bone.transform.position.y); 
+      //  lanternJoint.connectedAnchor = new Vector2(_rigidbody.transform.position.x - Bone.transform.position.x, _rigidbody.transform.position.y - Bone.transform.position.y); 
 
     }
     void FixedUpdate()

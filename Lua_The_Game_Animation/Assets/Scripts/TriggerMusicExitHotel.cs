@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerMusic : MonoBehaviour
+public class TriggerMusicExitHotel : MonoBehaviour
 {
     public GameObject music;
-    public Animator FadeInMusic;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +20,8 @@ public class TriggerMusic : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            music.SetActive(true);
+            music.SetActive(false);
         }
-        
+
     }
 }
