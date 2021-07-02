@@ -65,7 +65,7 @@ public class Character2DController : MonoBehaviour
             if (!safetyOn)
             {
                 jumpTime = Time.time + jumpBuffer;
-                luaanimator.SetBool("isfalling", false);
+                //luaanimator.SetBool("isfalling", false);
             }
             
         }
@@ -74,11 +74,11 @@ public class Character2DController : MonoBehaviour
             if (luaanimator.GetBool("isclimbing") == (true) || luaanimator.GetBool("isclimbingreverse") == (true))
             // (luaanimator.GetComponent().GetBool("isclimbing") == (true) )
             {
-                luaanimator.SetBool("isfalling", false);
+               // luaanimator.SetBool("isfalling", false);
             }
             else
             {
-                luaanimator.SetBool("isfalling", true);
+              //  luaanimator.SetBool("isfalling", true);
             }
             luaanimator.SetBool("isrunning", false);
         }

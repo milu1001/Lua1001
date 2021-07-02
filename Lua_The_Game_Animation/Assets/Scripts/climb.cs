@@ -53,7 +53,9 @@ public class climb : MonoBehaviour
             if ((isFacingRight && Input.GetKeyDown(KeyCode.LeftArrow)) || (!isFacingRight && Input.GetKeyDown(KeyCode.RightArrow)))
             {
                 isClimbing = false;
-                
+                luaanimator.SetBool("isclimbing", false);
+                luaanimator.SetBool("isclimbingreverse", false);
+
             }
         }
         if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
@@ -80,7 +82,8 @@ public class climb : MonoBehaviour
         }
         else if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.DownArrow))
             {
-                 luaanimator.SetBool("isclimbingreverse", false);
+            
+            luaanimator.SetBool("isclimbingreverse", false);
            // luaanimator.speed = 0;
         }
         
@@ -98,6 +101,8 @@ public class climb : MonoBehaviour
             luaanimator.SetBool("isclimbingreverse", false);
             luaanimator.speed = 1;
         }
+
         
+
     }
 }
