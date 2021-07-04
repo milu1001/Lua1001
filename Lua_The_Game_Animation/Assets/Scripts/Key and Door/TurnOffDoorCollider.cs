@@ -5,6 +5,7 @@ using UnityEngine;
 public class TurnOffDoorCollider : MonoBehaviour
 {
     public bool PlayerInRange;
+    public GameObject Door;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class TurnOffDoorCollider : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C) && PlayerInRange)
         {
             GetComponent<Collider2D>().enabled = false;
+            Door.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

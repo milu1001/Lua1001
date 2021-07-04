@@ -53,7 +53,7 @@ public class climb : MonoBehaviour
                 isClimbing = false;
                 luaanimator.SetBool("isclimbing", false);
                 luaanimator.SetBool("isclimbingreverse", false);
-                Debug.Log("beep");
+                //Debug.Log("beep");
             }
         }
         
