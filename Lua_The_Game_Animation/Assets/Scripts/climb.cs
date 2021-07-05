@@ -12,7 +12,7 @@ public class climb : MonoBehaviour
     private float inputVertical;
     private bool isClimbing = false;
     public float climbingSpeed = 1f;
-    private bool isFacingRight = false;
+    public bool isFacingRight = false;
     public float rayOffset;
     public float rayOffset2;
     Vector2 rayPos; 
