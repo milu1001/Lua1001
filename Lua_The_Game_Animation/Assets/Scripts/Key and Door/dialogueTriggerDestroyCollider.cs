@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 
 
-public class dialogueTriggerwoText : MonoBehaviour
+public class dialogueTriggerDestroyCollider : MonoBehaviour
 {
     public GameObject DialogueBox;
     public GameObject ListenBox;

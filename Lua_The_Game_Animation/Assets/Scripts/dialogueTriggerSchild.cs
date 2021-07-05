@@ -1,11 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
-
-public class dialogueTrigger : MonoBehaviour
+public class dialogueTriggerSchild : MonoBehaviour
 {
     public GameObject DialogueBox;
     public GameObject ListenBox;
@@ -13,11 +10,6 @@ public class dialogueTrigger : MonoBehaviour
     private Character2DController cc;
     private Animator ani;
     public bool PlayerInRange;
-    [TextArea(3, 10)]
-    public string[] sentences;
-    private int sentenceCounter;
-    public TextMeshProUGUI DialogueText;
-    public GameObject LastLine;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +18,9 @@ public class dialogueTrigger : MonoBehaviour
         ani = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Animator>();
     }
 
- 
-   
-    public void Update ()
+
+
+    public void Update()
     {
 
         if (Input.GetKeyDown(KeyCode.C) && PlayerInRange)
@@ -39,37 +31,22 @@ public class dialogueTrigger : MonoBehaviour
                 ListenBox.SetActive(false);
                 cc.enabled = false;
                 ani.SetBool("isrunning", false);
-                sentenceCounter = 0;
-                DialogueText.text = sentences[sentenceCounter];
             }
-            else if (DialogueBox.activeInHierarchy && sentenceCounter < (sentences.Length - 1))
+            else if (DialogueBox.activeInHierarchy)
             {
-                sentenceCounter++;
-                DialogueText.text = sentences[sentenceCounter];
-            }
-            else if (sentenceCounter >= (sentences.Length - 1) && DialogueBox.activeInHierarchy)
-            {
+                cc.enabled = true;
                 DialogueBox.SetActive(false);
                 ListenBox.SetActive(true);
-                cc.enabled = true;
-                GetComponent<Collider2D>().enabled = false;
-                LastLine.SetActive(true);
-
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && PlayerInRange && DialogueBox.activeInHierarchy)
-        {
-            DialogueBox.SetActive(false);
-            ListenBox.SetActive(true);
-            cc.enabled = true;
-        }
+
 
 
     }
 
-   
 
-private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
@@ -88,3 +65,5 @@ private void OnTriggerEnter2D(Collider2D collision)
     }
 
 }
+
+

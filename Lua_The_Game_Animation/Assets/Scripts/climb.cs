@@ -6,6 +6,7 @@ public class climb : MonoBehaviour
 {
     public LayerMask whatIsLadder;
     private RaycastHit2D climbCheck;
+    private RaycastHit2D edgeCheck;
     public Rigidbody2D rb;
     public float rayDistance;
     private float inputVertical;
@@ -13,8 +14,11 @@ public class climb : MonoBehaviour
     public float climbingSpeed = 1f;
     private bool isFacingRight = false;
     public float rayOffset;
-    Vector2 rayPos;
+    public float rayOffset2;
+    Vector2 rayPos; 
+    Vector2 rayPos2;
     public Animator luaanimator;
+    private bool foundAnEdge = false;
 
 
     // Start is called before the first frame update
@@ -26,60 +30,60 @@ public class climb : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         rayPos = new Vector2(transform.position.x, transform.position.y - rayOffset);
+        rayPos2 = new Vector2(transform.position.x, transform.position.y - rayOffset2);
         if (transform.rotation.y != 0)
         {
             isFacingRight = true;
             climbCheck = Physics2D.Raycast(rayPos, Vector2.right, rayDistance, whatIsLadder);
             Debug.DrawRay(rayPos, new Vector2(rayDistance, 0), Color.blue);
+
+            edgeCheck = Physics2D.Raycast(rayPos2, Vector2.right, rayDistance, whatIsLadder);
+            Debug.DrawRay(rayPos2, new Vector2(rayDistance, 0), Color.red);
         }
         else
         {
             isFacingRight = false;
             climbCheck = Physics2D.Raycast(rayPos, Vector2.left, rayDistance, whatIsLadder);
             Debug.DrawRay(rayPos, new Vector2(-rayDistance, 0), Color.blue);
+
+            edgeCheck = Physics2D.Raycast(rayPos2, Vector2.left, rayDistance, whatIsLadder);
+            Debug.DrawRay(rayPos2, new Vector2(-rayDistance, 0), Color.red);
         }
 
-        if (climbCheck.collider != null)
+        if (climbCheck.collider != null )
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow) )
+            if (Input.GetAxisRaw("Vertical") != 0)
             {
                 isClimbing = true;
-
-            }
-        
-            if ((isFacingRight && Input.GetKeyDown(KeyCode.LeftArrow)) || (!isFacingRight && Input.GetKeyDown(KeyCode.RightArrow)))
-            {
-                isClimbing = false;
-                luaanimator.SetBool("isclimbing", false);
-                luaanimator.SetBool("isclimbingreverse", false);
-                //Debug.Log("beep");
+                luaanimator.SetBool("isMonkey", true);
             }
         }
-        
-
-        if (isClimbing && climbCheck.collider != null && Input.GetKey(KeyCode.UpArrow))
-            {
-                 luaanimator.SetBool("isclimbing", true);
-            luaanimator.speed = 1;
-        }
-        else if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.UpArrow))
+        else
         {
-             luaanimator.SetBool("isclimbing", false);
-            luaanimator.speed = 0;
+            isClimbing = false;
+            foundAnEdge = false;
+            luaanimator.SetBool("isMonkey", false);
+            luaanimator.SetBool("isclimbing", false);
+            luaanimator.SetBool("isclimbingreverse", false); 
         }
 
-        if (isClimbing && climbCheck.collider != null && Input.GetKey(KeyCode.DownArrow))
-            {
-                 luaanimator.SetBool("isclimbingreverse", true);
-            luaanimator.speed = 1;
+        if (edgeCheck.collider != null)
+        {
+            foundAnEdge = false;
         }
-        else if (isClimbing && climbCheck.collider != null && !Input.GetKey(KeyCode.DownArrow))
-            {
-                luaanimator.SetBool("isclimbingreverse", false);
-            }
-        
-            if (isClimbing && climbCheck.collider != null)
+        else
+        {
+            foundAnEdge = true;
+        }
+
+        if (isClimbing && foundAnEdge && rb.velocity.y > 0)
+        {
+            luaanimator.speed = 1;
+            luaanimator.SetTrigger("foundEdge");
+        }
+        if (isClimbing)
         {
             inputVertical = Input.GetAxisRaw("Vertical");
             rb.gravityScale = 0f;
@@ -92,6 +96,23 @@ public class climb : MonoBehaviour
             luaanimator.SetBool("isclimbing", false);
             luaanimator.SetBool("isclimbingreverse", false);
             luaanimator.speed = 1;
+        }
+
+        if (isClimbing && Input.GetAxisRaw("Vertical") == 1)
+        {
+            luaanimator.speed = 1;
+            luaanimator.SetBool("isclimbingreverse", false);
+            luaanimator.SetBool("isclimbing", true);
+        }
+        else if (isClimbing && Input.GetAxisRaw("Vertical") == -1)
+        {
+            luaanimator.speed = 1;
+            luaanimator.SetBool("isclimbing", false);
+            luaanimator.SetBool("isclimbingreverse", true);
+        }
+        else if (isClimbing && Input.GetAxisRaw("Vertical") == 0 && !foundAnEdge )
+        {
+            luaanimator.speed = 0;
         }
 
         
