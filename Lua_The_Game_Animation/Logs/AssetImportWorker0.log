@@ -15,11 +15,11 @@ C:/Users/User/Desktop/GAME/github/Lua1001/Lua_The_Game_Animation
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61603
+62662
 Successfully changed project path to: C:/Users/User/Desktop/GAME/github/Lua1001/Lua_The_Game_Animation
 C:/Users/User/Desktop/GAME/github/Lua1001/Lua_The_Game_Animation
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 57.68 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 60.91 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
@@ -36,38 +36,38 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002030 seconds.
+Registered in 0.002004 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.15 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 56.04 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.086 seconds
+- Completed reload, in  1.066 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005839 seconds.
+Registered in 0.005301 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 51.36 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 53.61 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.191 seconds
+- Completed reload, in  1.180 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3057 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.9 MB.
-System memory in use after: 135.1 MB.
+System memory in use before: 134.8 MB.
+System memory in use after: 135.0 MB.
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 3494.
-Total: 2.826900 ms (FindLiveObjects: 0.319300 ms CreateObjectMapping: 0.168100 ms MarkObjects: 2.234900 ms  DeleteObjects: 0.103300 ms)
+Total: 2.238300 ms (FindLiveObjects: 0.239400 ms CreateObjectMapping: 0.123200 ms MarkObjects: 1.800000 ms  DeleteObjects: 0.074500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -82,47 +82,151 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Objects/SignHotelLibrary_040721.fbx
-  artifactKey: Guid(646081c21bb62764281312375a67f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/SignHotelLibrary_040721.fbx using Guid(646081c21bb62764281312375a67f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dcefb97a2bd0ac113b8ae85b5774691') in 0.411028 seconds 
-  Import took 0.424295 seconds .
+  path: Assets/Materials/Lua/Lua_NormalMap.png
+  artifactKey: Guid(ffe727bf457a543468b17879231c2783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Lua/Lua_NormalMap.png using Guid(ffe727bf457a543468b17879231c2783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3af4db754d59b172c12933a0000ee8e') in 0.101467 seconds 
+  Import took 0.106980 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 202.712365 seconds.
-  path: Assets/Objects/Fence/CityGate.obj
-  artifactKey: Guid(53271bc6ddcd9494795092d8eecf5b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Fence/CityGate.obj using Guid(53271bc6ddcd9494795092d8eecf5b87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a29e936b748ddd9181f3b058fe95c3') in 0.079615 seconds 
-  Import took 0.088261 seconds .
+  Time since last request: 0.000277 seconds.
+  path: Assets/Materials/Lua/Lua_basecolor_bake.png
+  artifactKey: Guid(2f537423edcf24f48a05692da246a54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Lua/Lua_basecolor_bake.png using Guid(2f537423edcf24f48a05692da246a54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e8efb58320e4165e4e262622a643f8') in 0.020376 seconds 
+  Import took 0.026837 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 50.942550 seconds.
-  path: Assets/Materials/Fence/bALKON.mat
-  artifactKey: Guid(097ed64b5569cbe45b0d64be9587bff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Fence/bALKON.mat using Guid(097ed64b5569cbe45b0d64be9587bff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bdeea4e73dd1d6078c36e9830eb604') in 0.036885 seconds 
-  Import took 0.044255 seconds .
+  Time since last request: 0.000302 seconds.
+  path: Assets/Materials/Lua/BaseMap.mat
+  artifactKey: Guid(1ca01269171799243a6469fcdfa764c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Lua/BaseMap.mat using Guid(1ca01269171799243a6469fcdfa764c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a62181f2d08e9b4e730a75d9ce35f27') in 0.168376 seconds 
+  Import took 0.174474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Materials/Lua
+  artifactKey: Guid(cd033ae862e958a41ba50e051fdedbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Lua using Guid(cd033ae862e958a41ba50e051fdedbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef4c990ce41117965f21efbf8317133') in 0.009748 seconds 
+  Import took 0.015349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.520979 seconds.
+  path: Assets/Materials/Laterne/Glas.mat
+  artifactKey: Guid(78dcbd8e85f369d42a21d1d0e7b48c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Laterne/Glas.mat using Guid(78dcbd8e85f369d42a21d1d0e7b48c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7857faf81d5bacf6450707cc724f87') in 0.035514 seconds 
+  Import took 0.044879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.212380 seconds.
+  path: Assets/Materials/Kommode
+  artifactKey: Guid(23185902f6249da4b9c67dcbbe97905b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Kommode using Guid(23185902f6249da4b9c67dcbbe97905b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59658ba97db96d7ef89e7d2e7c3f7c85') in 0.009220 seconds 
+  Import took 0.014161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.811170 seconds.
+  path: Assets/Materials/Regal
+  artifactKey: Guid(9026190230133d14dac9885555385cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal using Guid(9026190230133d14dac9885555385cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519715da514a8c9df43db7c6263e606a') in 0.008332 seconds 
+  Import took 0.012870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.080430 seconds.
+  path: Assets/Materials/Regal/1Regal.mat
+  artifactKey: Guid(61c9dd700d488954295e40ef95205407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/1Regal.mat using Guid(61c9dd700d488954295e40ef95205407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27c7ce21359f1358b24bc0682a7034e') in 0.025960 seconds 
+  Import took 0.031478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Materials/Regal/2Regal.mat
+  artifactKey: Guid(5cfbe472cdc327b41b5cfff3b672f667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/2Regal.mat using Guid(5cfbe472cdc327b41b5cfff3b672f667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e66aa1c6820935453a32f8e9499de50') in 0.081083 seconds 
+  Import took 0.088505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000494 seconds.
+  path: Assets/Materials/Regal/3Regal_Holz3.001_Normal.png
+  artifactKey: Guid(b5983c3d4e5e8224b8c203b8c7001fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/3Regal_Holz3.001_Normal.png using Guid(b5983c3d4e5e8224b8c203b8c7001fbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6107a7f786d5a8aa43083a2f6f39040e') in 0.031442 seconds 
+  Import took 0.040476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Materials/Regal/2Regal_Holz3_BaseColor.png
+  artifactKey: Guid(0150c87ed1433934e933933ad8be1a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/2Regal_Holz3_BaseColor.png using Guid(0150c87ed1433934e933933ad8be1a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2a0aff5c3533b9c35319f96f717233') in 0.039446 seconds 
+  Import took 0.045399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Materials/Regal/1Regal_Holz3.002_BaseColor.png
+  artifactKey: Guid(7fdeb36607d3f754e887a0c42796fb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/1Regal_Holz3.002_BaseColor.png using Guid(7fdeb36607d3f754e887a0c42796fb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847d7cd502f793dbe5ffb7a19c892f99') in 0.045951 seconds 
+  Import took 0.052212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Materials/Regal/2Regal_Holz3_Normal.png
+  artifactKey: Guid(455fcd2f0bb010d4fbcdc7c76605b102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/2Regal_Holz3_Normal.png using Guid(455fcd2f0bb010d4fbcdc7c76605b102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3466f04d9350c2a3cf6dc1d7ab9cce33') in 0.026898 seconds 
+  Import took 0.032527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Materials/Regal/3Regal_Holz3.001_BaseColor.png
+  artifactKey: Guid(1b49c2a3b06d38b468ccc051bd7a6953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/3Regal_Holz3.001_BaseColor.png using Guid(1b49c2a3b06d38b468ccc051bd7a6953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a00f66e6aac4a69c747c0b07d1c09dd') in 0.032735 seconds 
+  Import took 0.038727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/Materials/Regal/1Regal_Holz3.002_Normal.png
+  artifactKey: Guid(a71691e923490b049a6d42c3eb3dd2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/1Regal_Holz3.002_Normal.png using Guid(a71691e923490b049a6d42c3eb3dd2f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410c7480bbb3ce3c072f16431c99a943') in 0.025338 seconds 
+  Import took 0.030860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Materials/Regal/3Regal.mat
+  artifactKey: Guid(b8e1d548bda7bd24da7d60e39c3ed24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Regal/3Regal.mat using Guid(b8e1d548bda7bd24da7d60e39c3ed24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12ec3ef83b212235e69f81891fbbf9d') in 0.049436 seconds 
+  Import took 0.054707 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006628 seconds.
+Registered in 0.006313 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.280 seconds
+- Completed reload, in  1.475 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2927 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.0 MB.
-System memory in use after: 133.3 MB.
+Unloading 2926 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.7 MB.
+System memory in use after: 132.9 MB.
 
 Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3584.
-Total: 3.634500 ms (FindLiveObjects: 0.693400 ms CreateObjectMapping: 0.338300 ms MarkObjects: 2.570800 ms  DeleteObjects: 0.030700 ms)
+Total: 3.939700 ms (FindLiveObjects: 0.616000 ms CreateObjectMapping: 0.199000 ms MarkObjects: 3.078500 ms  DeleteObjects: 0.043700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,89 +240,233 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 2217.011429 seconds.
+  path: Assets/Materials/Bücherregal
+  artifactKey: Guid(38d2e791ec8b4364aade014fb68b6e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal using Guid(38d2e791ec8b4364aade014fb68b6e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698aabf53ca71f1feab032bc59aab2f5') in 0.015226 seconds 
+  Import took 0.021362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001649 seconds.
+  path: Assets/Materials/Bücherregal
+  artifactKey: Guid(38d2e791ec8b4364aade014fb68b6e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal using Guid(38d2e791ec8b4364aade014fb68b6e7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698aabf53ca71f1feab032bc59aab2f5') in 0.003595 seconds 
+  Import took 0.009720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.095221 seconds.
+  path: Assets/Materials/Bücherregal/gBücheregal.mat
+  artifactKey: Guid(033800371839ca94396a260ce4d413d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/gBücheregal.mat using Guid(033800371839ca94396a260ce4d413d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7240e93881b69e402269a56ecd6500da') in 0.156678 seconds 
+  Import took 0.162062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Materials/Bücherregal/gBücherregal_Material.001_BaseColor.png
+  artifactKey: Guid(62f327c35f24eb64190b16dcf9facced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/gBücherregal_Material.001_BaseColor.png using Guid(62f327c35f24eb64190b16dcf9facced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568832556dd4fd3f9abc303f67610fba') in 0.023543 seconds 
+  Import took 0.028439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Materials/Bücherregal/kBR3.mat
+  artifactKey: Guid(a214633e68b658b4c997e558aa726c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBR3.mat using Guid(a214633e68b658b4c997e558aa726c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566568d0a143cde86a526a40c3d69635') in 0.053156 seconds 
+  Import took 0.059368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Materials/Bücherregal/kBR2.mat
+  artifactKey: Guid(e44da72991827774985725f8261141d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBR2.mat using Guid(e44da72991827774985725f8261141d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8349dd42e1435723d77b611e3aebf00') in 0.049011 seconds 
+  Import took 0.054781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Materials/Bücherregal/kBücherregal2_Holz4.006_BaseColor.png
+  artifactKey: Guid(7c9eeb59ab376f4458a5861c71eaaf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBücherregal2_Holz4.006_BaseColor.png using Guid(7c9eeb59ab376f4458a5861c71eaaf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df230ce7442c2963e3feb3030acf274') in 0.037436 seconds 
+  Import took 0.042291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Materials/Bücherregal/gBücherregal_Material.001_Normal.png
+  artifactKey: Guid(5478c7c45c7a07441be5ece739478ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/gBücherregal_Material.001_Normal.png using Guid(5478c7c45c7a07441be5ece739478ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f424e9523dd7b25186325a4d3ca629') in 0.047438 seconds 
+  Import took 0.052063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Materials/Bücherregal/kBücherregal1_Holz4_BaseColor.png
+  artifactKey: Guid(00305dab0f002974e8eb5b944f0584d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBücherregal1_Holz4_BaseColor.png using Guid(00305dab0f002974e8eb5b944f0584d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2190447dc8968f69d7c483ff3e3158') in 0.025966 seconds 
+  Import took 0.031487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Materials/Bücherregal/kBücherregal2_Holz4.006_Normal.png
+  artifactKey: Guid(7f963d679a9fce146a29c091013d0576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBücherregal2_Holz4.006_Normal.png using Guid(7f963d679a9fce146a29c091013d0576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0fdef3637297040d2d72942e0d36c4') in 0.033060 seconds 
+  Import took 0.039394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Materials/Bücherregal/kBR1.mat
+  artifactKey: Guid(1b07d669a505e7044903dbfa4bdf850a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBR1.mat using Guid(1b07d669a505e7044903dbfa4bdf850a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6495b944640531e1e0334aa929db96d3') in 0.032138 seconds 
+  Import took 0.039505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Materials/Bücherregal/kBücherregal3_Holz4.007_BaseColor.png
+  artifactKey: Guid(2f347a27722b3ed45a5077dd82072ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBücherregal3_Holz4.007_BaseColor.png using Guid(2f347a27722b3ed45a5077dd82072ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910bfeae8f545cc3b4d66dcab2d0949c') in 0.026800 seconds 
+  Import took 0.032631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Materials/Bücherregal/kBücherregal1_Holz4_Normal.png
+  artifactKey: Guid(a8c8322e93e9f0a458f9061f4f969704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBücherregal1_Holz4_Normal.png using Guid(a8c8322e93e9f0a458f9061f4f969704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc5a0c6eb1fa82d789ff0006b2473c4') in 0.037184 seconds 
+  Import took 0.043403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Materials/Bücherregal/kBücherregal3_Holz4.007_Normal.png
+  artifactKey: Guid(78353323891820e4c88c1a4aa6734b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/kBücherregal3_Holz4.007_Normal.png using Guid(78353323891820e4c88c1a4aa6734b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fff4cc7e9f4e47d65b2025b86a233a4') in 0.019647 seconds 
+  Import took 0.026494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.007266 seconds.
+  path: Assets/Materials/Bücherregal/Bücher
+  artifactKey: Guid(0a413eb22ddfb904fa73791d4a2ff870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher using Guid(0a413eb22ddfb904fa73791d4a2ff870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0c67627885de486aef15b6645d663ca') in 0.018596 seconds 
+  Import took 0.024841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.052305 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/BlauesBuch.mat
+  artifactKey: Guid(0c5833cfba447cf44a82dc7f9a4bdaf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/BlauesBuch.mat using Guid(0c5833cfba447cf44a82dc7f9a4bdaf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77663ae7730550e0214206a1727bbdf2') in 0.032709 seconds 
+  Import took 0.037740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/TürkisBUch.mat
+  artifactKey: Guid(4f7c5f750902da44994d36fc3788dda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/TürkisBUch.mat using Guid(4f7c5f750902da44994d36fc3788dda4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679589623e199237fb33fd2fd14c4d86') in 0.018691 seconds 
+  Import took 0.023542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/RotesBuch.mat
+  artifactKey: Guid(75e7fce60a194e24b8461a8b6bd09434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/RotesBuch.mat using Guid(75e7fce60a194e24b8461a8b6bd09434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4363eb366b9e8a459438e45d7384c2c8') in 0.047045 seconds 
+  Import took 0.052232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/GrünesBuch.mat
+  artifactKey: Guid(0b1d1106963d5734faf922e6369c9a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/GrünesBuch.mat using Guid(0b1d1106963d5734faf922e6369c9a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f581c6d5aafe60a88c6fdbcf3f7fad') in 0.035314 seconds 
+  Import took 0.040491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/BraunesBuch.mat
+  artifactKey: Guid(bea2b7a0730e75a4c9e2745e0328ccf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/BraunesBuch.mat using Guid(bea2b7a0730e75a4c9e2745e0328ccf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716c0234ff9284e73e869f68c2b484f3') in 0.034894 seconds 
+  Import took 0.039905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/Gold.mat
+  artifactKey: Guid(0a65b110fce907a4bbf460baaf0ad1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/Gold.mat using Guid(0a65b110fce907a4bbf460baaf0ad1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56eeef859169819391058052d3c1a38') in 0.036196 seconds 
+  Import took 0.042040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/VioletBuch.mat
+  artifactKey: Guid(793f93814dadf724db230f7f79d572fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/VioletBuch.mat using Guid(793f93814dadf724db230f7f79d572fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729c13abcd63257d4a9ff8d247a3d096') in 0.038492 seconds 
+  Import took 0.044391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Materials/Bücherregal/Bücher/Paper.mat
+  artifactKey: Guid(2a66c6685fcea7842bf1552e229cf589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/Bücher/Paper.mat using Guid(2a66c6685fcea7842bf1552e229cf589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dc526d0d668a3ed96a35e7c0a0f5129') in 0.032417 seconds 
+  Import took 0.038305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.013378 seconds.
+  path: Assets/Materials/BibTapete.mat
+  artifactKey: Guid(98bb2a95134efd34abdfa3e37572d6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/BibTapete.mat using Guid(98bb2a95134efd34abdfa3e37572d6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad94fca393d3222e87173ef41adb1d47') in 0.046848 seconds 
+  Import took 0.053250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 657.994793 seconds.
+  path: Assets/Objects/Türen/RAHMEN.fbx
+  artifactKey: Guid(c51da695ce0903e45baed3ff2ed23b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Türen/RAHMEN.fbx using Guid(c51da695ce0903e45baed3ff2ed23b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b049f76c277e30e685128fac5445fb') in 0.071714 seconds 
+  Import took 0.077016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 95.464122 seconds.
+  path: Assets/Materials/Hotel/Wand_unten.mat
+  artifactKey: Guid(3710b4bafc7a2f04e849651f6704c441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Hotel/Wand_unten.mat using Guid(3710b4bafc7a2f04e849651f6704c441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13b2ab6eb813747f0d33bb232615320f') in 0.028528 seconds 
+  Import took 0.034016 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006146 seconds.
+Registered in 0.008455 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.66 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.619 seconds
+- Completed reload, in  1.762 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2926 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.1 MB.
+System memory in use before: 133.1 MB.
+System memory in use after: 133.3 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3587.
-Total: 5.536100 ms (FindLiveObjects: 1.020100 ms CreateObjectMapping: 0.465500 ms MarkObjects: 4.014300 ms  DeleteObjects: 0.032700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006045 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.251 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2926 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.9 MB.
-System memory in use after: 133.2 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3590.
-Total: 2.364700 ms (FindLiveObjects: 0.262200 ms CreateObjectMapping: 0.125000 ms MarkObjects: 1.956000 ms  DeleteObjects: 0.020500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005444 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.462 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2926 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.0 MB.
-System memory in use after: 133.2 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3593.
-Total: 2.665900 ms (FindLiveObjects: 0.292600 ms CreateObjectMapping: 0.160600 ms MarkObjects: 2.170200 ms  DeleteObjects: 0.041500 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3628.
+Total: 3.050400 ms (FindLiveObjects: 0.306100 ms CreateObjectMapping: 0.132900 ms MarkObjects: 2.548100 ms  DeleteObjects: 0.061800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -233,136 +481,64 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1567.855462 seconds.
-  path: Assets/Objects/Türen/TürRahmen_LaternenZimmer.fbx
-  artifactKey: Guid(183bb2e8a350f1c41b8d81e30c847e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Türen/TürRahmen_LaternenZimmer.fbx using Guid(183bb2e8a350f1c41b8d81e30c847e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9db93b7e6c10eb269ffcc29c23a5e6') in 0.210278 seconds 
-  Import took 0.215832 seconds .
+  Time since last request: 573.540917 seconds.
+  path: Assets/Materials/Bücherregal/gBücheregal.mat
+  artifactKey: Guid(033800371839ca94396a260ce4d413d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bücherregal/gBücheregal.mat using Guid(033800371839ca94396a260ce4d413d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9216c2273ea29bd762b4b9b08a10ac35') in 0.148620 seconds 
+  Import took 0.156355 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 146.629666 seconds.
-  path: Assets/Materials/Tür/Türrahmen.mat
-  artifactKey: Guid(332daeb3a40baf04db2271f7a5db9309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Tür/Türrahmen.mat using Guid(332daeb3a40baf04db2271f7a5db9309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee290a292603c06e56d63002dd65e5cd') in 0.025035 seconds 
-  Import took 0.033747 seconds .
+  Time since last request: 4.563980 seconds.
+  path: Assets/Objects/Bücherstapel
+  artifactKey: Guid(70c2a4b7120083344bada49aa2ddcabf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Bücherstapel using Guid(70c2a4b7120083344bada49aa2ddcabf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ddc757cb89a193f98a42d608881e1a9') in 0.012654 seconds 
+  Import took 0.018960 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.007084 seconds.
-  path: Assets/Materials/Tür/Türrahmen.mat
-  artifactKey: Guid(332daeb3a40baf04db2271f7a5db9309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Tür/Türrahmen.mat using Guid(332daeb3a40baf04db2271f7a5db9309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee290a292603c06e56d63002dd65e5cd') in 0.016203 seconds 
-  Import took 0.023429 seconds .
+  Time since last request: 0.113582 seconds.
+  path: Assets/Objects/Bücherstapel/Buchstapel1.fbx
+  artifactKey: Guid(e87ddb3aea1aa814f8df08a0831e597b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Bücherstapel/Buchstapel1.fbx using Guid(e87ddb3aea1aa814f8df08a0831e597b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf81eecd2bd0739afc31fbac4d88ebd') in 0.168580 seconds 
+  Import took 0.174135 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 455.985539 seconds.
-  path: Assets/Objects/Türen/Bücherrei_Außen_Fassade.fbx
-  artifactKey: Guid(4d83f06035a34dc40a0d75576ac3820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Türen/Bücherrei_Außen_Fassade.fbx using Guid(4d83f06035a34dc40a0d75576ac3820d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca711da23966e5fe775c1e1d99433e3') in 0.089246 seconds 
-  Import took 0.102381 seconds .
+  Time since last request: 0.000297 seconds.
+  path: Assets/Objects/Bücherstapel/Buchstapel3.fbx
+  artifactKey: Guid(ca6dde35bd71fef44b743b97d994f982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Bücherstapel/Buchstapel3.fbx using Guid(ca6dde35bd71fef44b743b97d994f982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53b12ceb4df6fa6bdb0e253649b5fde2') in 0.139356 seconds 
+  Import took 0.143897 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Objects/Türen/Bücherrei_Tür2.fbx
-  artifactKey: Guid(c89c559873c168b488ef160b0422dc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Türen/Bücherrei_Tür2.fbx using Guid(c89c559873c168b488ef160b0422dc23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9744081a4ab723c3faba48ec13fcd842') in 0.032940 seconds 
-  Import took 0.041385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Objects/Türen/Bücherrei_Tür1.fbx
-  artifactKey: Guid(2e75387bf062adc46b6865b16578f17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Objects/Türen/Bücherrei_Tür1.fbx using Guid(2e75387bf062adc46b6865b16578f17d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e70b3f5f2136ee1701d5d67486de0a6') in 0.045322 seconds 
-  Import took 0.050903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 654.808462 seconds.
-  path: Assets/Materials/box/Box_Deckel.mat
-  artifactKey: Guid(055a5249272ff2d4f90654f36325079b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Box_Deckel.mat using Guid(055a5249272ff2d4f90654f36325079b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61918f54fe07079f4a452d05905b57c8') in 0.070061 seconds 
-  Import took 0.079759 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Materials/box/Kiste_Box_BaseColor 1.png
-  artifactKey: Guid(cff57c9c527d35c4d87d6f2960d572c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Kiste_Box_BaseColor 1.png using Guid(cff57c9c527d35c4d87d6f2960d572c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ffaf446f7126d081236c3b245e649a') in 0.032961 seconds 
-  Import took 0.040271 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000300 seconds.
-  path: Assets/Materials/box/KisteDeckel_Box_Deckel.001_BaseColor.png
-  artifactKey: Guid(2bbc80cf57fa57944b490e67445e3b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/KisteDeckel_Box_Deckel.001_BaseColor.png using Guid(2bbc80cf57fa57944b490e67445e3b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580aac16bf907dad779d82d8d22554d4') in 0.037069 seconds 
-  Import took 0.048626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Materials/box/Kiste_Box_Normal 1.png
-  artifactKey: Guid(4f835ee0b40ab8a43a92c0c06aad45c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Kiste_Box_Normal 1.png using Guid(4f835ee0b40ab8a43a92c0c06aad45c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3087a3eed17bce5a5ca341ca448111fa') in 0.050012 seconds 
-  Import took 0.058078 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Materials/box/KisteDeckel_Box_Deckel.001_Normal.png
-  artifactKey: Guid(ed7ad103287b4b441a35e6933bc25e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/KisteDeckel_Box_Deckel.001_Normal.png using Guid(ed7ad103287b4b441a35e6933bc25e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2bb80a1199f6348e2390571a08c14c') in 0.029035 seconds 
-  Import took 0.036251 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/Materials/box/Kiste_Box_BaseColor.png
-  artifactKey: Guid(bf9135acbed17a745b7af31c49049835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Kiste_Box_BaseColor.png using Guid(bf9135acbed17a745b7af31c49049835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49e9ee3a2690ff2b8d3607a65150b9a') in 0.066425 seconds 
-  Import took 0.076495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Materials/box/Box_dunkel.mat
-  artifactKey: Guid(791d7dde6dd96f348add47df4f1ce28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Box_dunkel.mat using Guid(791d7dde6dd96f348add47df4f1ce28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '010e617f99f84715cffaa1a6fdde414f') in 0.031490 seconds 
-  Import took 0.038847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Materials/box/Box_hell.mat
-  artifactKey: Guid(18d47b6cdaa12604b860ed6c02a8bfd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Box_hell.mat using Guid(18d47b6cdaa12604b860ed6c02a8bfd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b6792a58d00b87ce8dd9022c5fbc2b') in 0.069493 seconds 
-  Import took 0.080115 seconds .
+  Time since last request: 0.000383 seconds.
+  path: Assets/Objects/Bücherstapel/Buchstapel2.fbx
+  artifactKey: Guid(20b4be555ed927d4db85c7c317413feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Bücherstapel/Buchstapel2.fbx using Guid(20b4be555ed927d4db85c7c317413feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb08b86af5576b78d1c39d8d57bb1a5') in 0.211761 seconds 
+  Import took 0.216135 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006674 seconds.
+Registered in 0.006003 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.664 seconds
+- Completed reload, in  1.588 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2926 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.2 MB.
-System memory in use after: 133.4 MB.
+System memory in use before: 133.3 MB.
+System memory in use after: 133.5 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3636.
-Total: 2.526800 ms (FindLiveObjects: 0.287200 ms CreateObjectMapping: 0.098600 ms MarkObjects: 2.103500 ms  DeleteObjects: 0.036600 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3668.
+Total: 2.508700 ms (FindLiveObjects: 0.285700 ms CreateObjectMapping: 0.089300 ms MarkObjects: 2.092400 ms  DeleteObjects: 0.040300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -377,18 +553,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 3338.432202 seconds.
-  path: Assets/Materials/box/Box_Deckel.mat
-  artifactKey: Guid(055a5249272ff2d4f90654f36325079b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Box_Deckel.mat using Guid(055a5249272ff2d4f90654f36325079b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa98266e4f0b162e871455038f9f9ab') in 0.145392 seconds 
-  Import took 0.154521 seconds .
+  Time since last request: 1075.301013 seconds.
+  path: Assets/Objects/Fenster/Fassade_Fenster.fbx
+  artifactKey: Guid(2fcbbe9806bb66b4e875db9dd8081cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Objects/Fenster/Fassade_Fenster.fbx using Guid(2fcbbe9806bb66b4e875db9dd8081cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19bd003bef6cd215ba03762d366df217') in 0.187628 seconds 
+  Import took 0.203277 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Materials/box/Box_dunkel.mat
-  artifactKey: Guid(791d7dde6dd96f348add47df4f1ce28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/box/Box_dunkel.mat using Guid(791d7dde6dd96f348add47df4f1ce28c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ecfdeab563cc2d16944ff3b9efbc6b') in 0.084588 seconds 
-  Import took 0.091652 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007515 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.509 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2926 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.6 MB.
 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3708.
+Total: 2.848000 ms (FindLiveObjects: 0.282700 ms CreateObjectMapping: 0.140400 ms MarkObjects: 2.400200 ms  DeleteObjects: 0.023400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
