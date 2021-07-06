@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8834cf96896598f469b36bb22a3d2ac7
+guid: dbc7a419d0fa0e04ebabc0d87203e0c7
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -60,27 +60,27 @@ ModelImporter:
       curves: []
       events:
       - time: 0
-        functionName: lockMovement
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: 02eb248f4d7c5ae459dc85bf201ae3e1, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.0049261083
         functionName: MoveUpwards
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 02eb248f4d7c5ae459dc85bf201ae3e1, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.31032228
+      - time: 0
+        functionName: lockMovement
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 02eb248f4d7c5ae459dc85bf201ae3e1, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.48888803
         functionName: MoveSidewards
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 02eb248f4d7c5ae459dc85bf201ae3e1, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 1
+      - time: 0.97878087
         functionName: unlockMovement
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 02eb248f4d7c5ae459dc85bf201ae3e1, type: 3}

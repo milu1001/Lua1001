@@ -58,6 +58,7 @@ public class climb : MonoBehaviour
             {
                 isClimbing = true;
                 luaanimator.SetBool("isMonkey", true);
+                luaanimator.ResetTrigger("foundEdge");
             }
         }
         else
@@ -82,6 +83,8 @@ public class climb : MonoBehaviour
         {
             luaanimator.speed = 1;
             luaanimator.SetTrigger("foundEdge");
+            foundAnEdge = false;
+
         }
         if (isClimbing)
         {
