@@ -289,9 +289,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 11135142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c4a2cbe28be2f84b9d8b8df23390263, type: 3}
+  m_Script: {fileID: 11500000, guid: 69bba4b68e02e8d43be83c14eb61ba92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Black: {fileID: 106873327}
 --- !u!1 &106873325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,7 +1055,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11135144}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -1917,7 +1918,6 @@ GameObject:
   - component: {fileID: 1712766321}
   - component: {fileID: 1712766325}
   - component: {fileID: 1712766324}
-  - component: {fileID: 1712766323}
   - component: {fileID: 1712766322}
   m_Layer: 5
   m_Name: FadeToBlack
@@ -1964,19 +1964,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1712766323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712766320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69bba4b68e02e8d43be83c14eb61ba92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Black: {fileID: 1712766322}
 --- !u!114 &1712766324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,7 +2211,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11135144}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
