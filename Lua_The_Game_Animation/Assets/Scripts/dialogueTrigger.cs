@@ -57,12 +57,7 @@ public class dialogueTrigger : MonoBehaviour
 
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && PlayerInRange && DialogueBox.activeInHierarchy)
-        {
-            DialogueBox.SetActive(false);
-            ListenBox.SetActive(true);
-            cc.enabled = true;
-        }
+        
 
 
     }

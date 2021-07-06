@@ -5,7 +5,7 @@ using UnityEngine;
 public class moveUp : MonoBehaviour
 {
     public GameObject Light;
-    private float movementSpeed = 1f;
+    public float movementSpeed = 3f;
     public float noLower;
     public float noHigher;
     public bool PlayerInRange;
@@ -21,7 +21,6 @@ public class moveUp : MonoBehaviour
     void Update()
     {
         float verticalInput = Input.GetAxis("Vertical");
-        print(transform.position.y);
 
         if (transform.localPosition.y >= noLower && transform.localPosition.y <= noHigher)
         {
@@ -30,22 +29,20 @@ public class moveUp : MonoBehaviour
                 transform.position = transform.position + new Vector3(0, verticalInput * movementSpeed * Time.deltaTime);
             }
         }
-         
-        //if (transform.localPosition.y >= noLower )
-        //{
-        //    if (Light.activeInHierarchy == true && PlayerInRange && velocity.y >= 0)
-        //    {
-        //        transform.position = transform.position + new Vector3(0, verticalInput * movementSpeed * Time.deltaTime);
-        //    }
-        //}
 
-        //if (transform.localPosition.y >= noLower && transform.localPosition.y <= noHigher)
-        //{
-        //    if (Light.activeInHierarchy == true && PlayerInRange)
-        //    {
-        //        transform.position = transform.position + new Vector3(0, verticalInput * movementSpeed * Time.deltaTime);
-        //    }
-        //}
+        if (transform.localPosition.y <= noLower)
+        {
+            transform.position = transform.position + new Vector3(0,noLower + 0.01f);
+        }
+
+        if (transform.localPosition.y >= noHigher)
+        {
+            transform.localPosition =  new Vector3(0, noHigher - 0.02f);
+            print("highestPointuwu");
+            print(transform.localPosition.y);
+        }
+
+
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
