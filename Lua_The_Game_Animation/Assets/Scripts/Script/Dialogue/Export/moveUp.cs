@@ -5,7 +5,10 @@ using UnityEngine;
 public class moveUp : MonoBehaviour
 {
     public GameObject Light;
-    private float movementSpeed = 5f;
+    private float movementSpeed = 1f;
+    public float noLower;
+    public float noHigher;
+    public bool PlayerInRange;
 
 
     // Start is called before the first frame update
@@ -18,12 +21,46 @@ public class moveUp : MonoBehaviour
     void Update()
     {
         float verticalInput = Input.GetAxis("Vertical");
-       
+        print(transform.position.y);
 
-        if (Light.activeInHierarchy == true)
+        if (transform.localPosition.y >= noLower && transform.localPosition.y <= noHigher)
         {
-            transform.position = transform.position + new Vector3 (verticalInput * movementSpeed * Time.deltaTime, 0);
+            if (Light.activeInHierarchy == true && PlayerInRange)
+            {
+                transform.position = transform.position + new Vector3(0, verticalInput * movementSpeed * Time.deltaTime);
+            }
+        }
+         
+        //if (transform.localPosition.y >= noLower )
+        //{
+        //    if (Light.activeInHierarchy == true && PlayerInRange && velocity.y >= 0)
+        //    {
+        //        transform.position = transform.position + new Vector3(0, verticalInput * movementSpeed * Time.deltaTime);
+        //    }
+        //}
 
+        //if (transform.localPosition.y >= noLower && transform.localPosition.y <= noHigher)
+        //{
+        //    if (Light.activeInHierarchy == true && PlayerInRange)
+        //    {
+        //        transform.position = transform.position + new Vector3(0, verticalInput * movementSpeed * Time.deltaTime);
+        //    }
+        //}
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerInRange = false;
         }
     }
 }
