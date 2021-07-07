@@ -11,9 +11,12 @@ public class MainMenu : MonoBehaviour
 
     public Animator MenuAni;
 
-   
 
-        public void PlayGame()
+    public void Awake()
+    {
+        
+    }
+    public void PlayGame()
         {
             MenuAni.SetTrigger("fadeOut");
           //  SceneManager.LoadScene("Game", LoadSceneMode.Single);

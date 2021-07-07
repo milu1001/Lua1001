@@ -76,6 +76,7 @@ public class escMenu : MonoBehaviour
     public void ExitToMenu()
     {
         IsPaused = false;
+        print("menu");
         SceneManager.LoadScene("ActualMenu", LoadSceneMode.Single);
 
     }
