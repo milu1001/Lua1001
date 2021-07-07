@@ -80,7 +80,7 @@ public class Character2DController : MonoBehaviour
             {
               //  luaanimator.SetBool("isfalling", true);
             }
-            luaanimator.SetBool("isrunning", false);
+           // luaanimator.SetBool("isrunning", false);
         }
 
 

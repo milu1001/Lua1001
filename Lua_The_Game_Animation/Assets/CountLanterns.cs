@@ -14,7 +14,7 @@ public class CountLanterns : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Lantern").Length > 20)
+        if (GameObject.FindGameObjectsWithTag("Lantern").Length == 14)
         {
             CrowEnd.SetActive(true);
         }
