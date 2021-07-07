@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class CrowLightUI : MonoBehaviour
+using UnityEngine.SceneManagement;
+public class TriggerEndAnimatic : MonoBehaviour
 {
+    public GameObject ListenBox;
     public bool PlayerInRange;
-    public GameObject CrowConvo1;
-    public GameObject CrowConvo2;
-    public GameObject CrowConvo3;
+    public Animator FadeOut;
+    public Animator Music;
 
 
-
-    // Start is called before the first frame update
-
-
-    // Update is called once per frame
+    public void Awake()
+    {
+        FadeOut.speed = 0;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -32,12 +31,17 @@ public class CrowLightUI : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && PlayerInRange)
+        if (Input.GetKeyDown(KeyCode.C) && PlayerInRange)
         {
-            CrowConvo1.SetActive(false);
-            CrowConvo3.SetActive(false);
-            CrowConvo2.SetActive(true);
-            GetComponent<Collider2D>().enabled = false;
+            Music.SetTrigger("musicFadeOut");
+            FadeOut.speed = 1;
+
         }
+
+
+    }
+    public void FadeisDone()
+    {
+        SceneManager.LoadScene("EndAnimatic", LoadSceneMode.Single);
     }
 }

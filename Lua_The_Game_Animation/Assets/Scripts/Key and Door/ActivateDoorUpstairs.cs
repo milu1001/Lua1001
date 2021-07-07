@@ -8,6 +8,7 @@ public class ActivateDoorUpstairs : MonoBehaviour
     public GameObject Door;
     public GameObject HootConvo1;
     public GameObject HootConvo2;
+    public GameObject HootConvo3;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class ActivateDoorUpstairs : MonoBehaviour
             if (!Door.activeInHierarchy)
             {
                 Door.SetActive(true);
+                HootConvo3.SetActive(false);
                 HootConvo1.SetActive(false);
                 HootConvo2.SetActive(true);
 
