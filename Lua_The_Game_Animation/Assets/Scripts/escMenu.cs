@@ -16,6 +16,7 @@ public class escMenu : MonoBehaviour
     {
 
         pauseMenuCanvas.SetActive(false);
+        Time.timeScale = 1;
     }
 
 

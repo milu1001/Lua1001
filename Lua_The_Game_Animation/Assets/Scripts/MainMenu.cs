@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject Exit;
 
     public Animator MenuAni;
+    public Animator Music;
 
 
     public void Awake()
@@ -19,6 +20,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
         {
             MenuAni.SetTrigger("fadeOut");
+            Music.SetTrigger("musicFadeOut");
           //  SceneManager.LoadScene("Game", LoadSceneMode.Single);
         }
     

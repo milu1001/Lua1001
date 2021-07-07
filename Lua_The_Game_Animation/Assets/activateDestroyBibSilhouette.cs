@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MakeCrowDissapear : MonoBehaviour
+public class activateDestroyBibSilhouette : MonoBehaviour
 {
+    public GameObject TBD;
     public bool PlayerInRange;
-    public GameObject crow;
-    public GameObject BibDoor;
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = true;
+           
         }
     }
 
@@ -21,17 +22,14 @@ public class MakeCrowDissapear : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerInRange = false;
+            
         }
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && PlayerInRange)
+        if (Input.GetKeyDown(KeyCode.C) && PlayerInRange)
         {
-            if (crow.activeInHierarchy)
-            {
-                crow.SetActive(false);
-                BibDoor.SetActive(false);
-            }
+            TBD.SetActive(true);
         }
 
 

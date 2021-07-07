@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MakeCrowDissapear : MonoBehaviour
+public class DestroyBibSilhouette : MonoBehaviour
 {
+    public GameObject bild;
     public bool PlayerInRange;
-    public GameObject crow;
-    public GameObject BibDoor;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,13 +24,10 @@ public class MakeCrowDissapear : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X) && PlayerInRange)
+        if (Input.GetKeyDown(KeyCode.C) && PlayerInRange)
         {
-            if (crow.activeInHierarchy)
-            {
-                crow.SetActive(false);
-                BibDoor.SetActive(false);
-            }
+            bild.SetActive(false);
+            GetComponent<Collider2D>().enabled = false;
         }
 
 
