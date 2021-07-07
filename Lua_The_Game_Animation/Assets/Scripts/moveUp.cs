@@ -38,8 +38,6 @@ public class moveUp : MonoBehaviour
         if (transform.localPosition.y >= noHigher)
         {
             transform.localPosition =  new Vector3(0, noHigher - 0.02f);
-            print("highestPointuwu");
-            print(transform.localPosition.y);
         }
 
 

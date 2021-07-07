@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class escMenu : MonoBehaviour
 {
     public static bool IsPaused;
     public GameObject pauseMenuCanvas;
+    public GameObject Continue;
+    public GameObject Options;
+    public GameObject Exit;
 
 
     void Start()
@@ -48,7 +52,7 @@ public class escMenu : MonoBehaviour
     }
 
 
-    public void Resume()
+    public void ContinueGame()
     {
 
         if (!IsPaused)
@@ -64,10 +68,15 @@ public class escMenu : MonoBehaviour
         }
     }
 
-    public void ExitGame()
+    public void EscOptions()
+    {
+
+    }
+
+    public void ExitToMenu()
     {
         IsPaused = false;
-        Application.Quit();
+        SceneManager.LoadScene("ActualMenu", LoadSceneMode.Single);
 
     }
 
