@@ -47,7 +47,6 @@ public class escMenu : MonoBehaviour
         {
             pauseMenuCanvas.SetActive(false);
         }
-       // timeRemaining -= Time.deltaTime;
 
     }
 
@@ -76,6 +75,7 @@ public class escMenu : MonoBehaviour
     public void ExitToMenu()
     {
         IsPaused = false;
+        Time.timeScale = 1;
         print("menu");
         SceneManager.LoadScene("ActualMenu", LoadSceneMode.Single);
 
